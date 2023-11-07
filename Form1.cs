@@ -232,7 +232,7 @@ namespace Projekt_AISD_S
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wykryto blednie wprowadzone liczby, kazda liczba musi byc oddzielona spacja");
+                MessageBox.Show("Błąd!!! Nie mozesz dawać znakow specjalnych cyfry muszą byc oddzielone spacją.");
             }
         }
 
@@ -254,7 +254,7 @@ namespace Projekt_AISD_S
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wykryto blednie wprowadzone liczby, kazda liczba musi byc oddzielona spacja");
+                MessageBox.Show("Błąd!!! Nie mozesz dawać znakow specjalnych cyfry muszą byc oddzielone spacją.");
             }
         }
 
@@ -271,7 +271,7 @@ namespace Projekt_AISD_S
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wykryto blednie wprowadzone liczby, kazda liczba musi byc oddzielona spacja");
+                MessageBox.Show("Błąd!!! Nie mozesz dawać znakow specjalnych cyfry muszą byc oddzielone spacją.");
             }
         }
 
@@ -288,7 +288,7 @@ namespace Projekt_AISD_S
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wykryto blednie wprowadzone liczby, kazda liczba musi byc oddzielona spacja");
+                MessageBox.Show("Błąd!!! Nie mozesz dawać znakow specjalnych cyfry muszą byc oddzielone spacją.");
             }
         }
 
@@ -306,7 +306,7 @@ namespace Projekt_AISD_S
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wykryto blednie wprowadzone liczby, kazda liczba musi byc oddzielona spacja");
+                MessageBox.Show("Błąd!!! Nie mozesz dawać znakow specjalnych cyfry muszą byc oddzielone spacją.");
             }
         }
 
@@ -317,7 +317,7 @@ namespace Projekt_AISD_S
 
             for (int i = 0; i < count; i++)
             {
-                int number = random.Next(0, 1001);
+                int number = random.Next(0, 500);
                 textBox1.Text += number.ToString() + " ";
             }
 
@@ -343,7 +343,7 @@ namespace Projekt_AISD_S
             int minValue = (int)numericUpDown1.Minimum;
             int maxValue = (int)numericUpDown1.Maximum;
 
-            int randomNumber = random.Next(minValue, maxValue + 1); // Losuj liczb� w zakresie od minValue do maxValue
+            int randomNumber = random.Next(minValue, maxValue + 1);
 
             numericUpDown1.Value = randomNumber;
         }
